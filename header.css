@@ -1,0 +1,28 @@
+
+
+.header{
+    background: var(--color-primary);
+    display: flex;
+
+}
+
+.logo img{
+    height: 85px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+
+.menu ul{
+    font-size: 1.8rem;
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+}
+
+.link{
+    text-decoration: none;
+    color: var(--white);
+}
