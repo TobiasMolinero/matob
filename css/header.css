@@ -1,0 +1,140 @@
+
+
+.header{
+    background: #fff;
+    display: flex;
+    height: 100px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 75px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+
+.menu ul{
+    font-size: 1.8rem;
+    display: flex;
+    list-style-type: none;
+    height: 100%;
+}
+
+.menu ul li{
+    height: 100%;
+}
+
+.link{
+    text-decoration: none;
+    color: var(--color-primary);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.link:hover{
+    background: #fafafa;
+    border-top: 2px solid var(--color-primary);
+}
+
+.link:active{
+    background: #f3f3f3;
+}
+
+.boton-menu{
+    display: none;
+}
+
+.menu-responsive{
+    display: none;
+}
+
+/* SMARTPHONE */
+@media screen and (max-width:767px){
+
+    .header{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu{display: none}
+
+    .boton-menu{
+        display: inline;
+        align-self: center;
+        justify-self: end;
+        margin-right: 20px;
+        font-size: 3.5rem;
+        border: none;
+        background: none
+    }
+
+    .boton-menu i{
+        color: var(--color-primary);
+    }
+
+    .boton-menu i:active{
+        color: black;
+    }
+
+    .menu-responsive{
+        background: #fff;
+        display: block;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        overflow: hidden;
+        width: 100%;
+        height: 0;
+        z-index: -1;
+    }
+
+    .abierto{
+        animation: abrirMenu 0.2s ease-in forwards;
+    }
+
+    .menu-responsive ul{
+        padding: 20px 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .menu-responsive li{
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu-responsive .link{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) and (max-width:1023px){
+
+}
+
+@keyframes abrirMenu {
+    from{
+        height: 0;
+    }
+    to{
+        height: 100vh;
+    }
+}
