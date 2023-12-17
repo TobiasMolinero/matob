@@ -52,3 +52,9 @@
 .banner button:hover{
     transform: scale(1.1)
 }
+
+@media screen and (max-width:767px){
+    .content-banner h1{
+        font-size: 2.8rem;
+    }
+}
