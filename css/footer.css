@@ -1,0 +1,115 @@
+footer{
+    background: var(--color-primary);
+    color: #fff;
+}
+
+.grid-footer{
+    display: grid;
+    grid-template-areas: 
+        "descripcion info servicios"
+    ;
+    padding: 40px 150px;
+}
+
+.grid-footer h3{
+    font-size: 1.3rem;
+}
+
+.grid-footer a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.footer-descripcion{
+    width: 300px;
+    grid-area: descripcion;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1.4rem;
+}
+
+.footer-descripcion img{
+    height: 50px;
+    width: 200px;
+}
+
+.footer-descripcion_telefono_direccion{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.footer-descripcion_telefono_direccion li{
+    display: flex;
+    gap: 10px;
+}
+
+.footer-descripcion_redes{
+    margin-top: 10px;
+    display: flex;
+    gap: 15px;
+}
+
+.footer-descripcion_redes i{
+    font-size: 1.6rem;
+    transition: 0.15s;
+}
+
+.footer-descripcion_redes i:hover{
+    color: var(--color-secondary);
+}
+
+.footer-info, .footer-servicios{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.footer-info ul, .footer-servicios ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-info a, .footer-servicios a{
+    transition: 0.15s;
+}
+
+.footer-info a:hover, .footer-servicios a:hover{
+    color: var(--color-secondary);
+}
+
+.footer-info{
+    grid-area: info;
+}
+
+.footer-servicios{
+    grid-area: servicios;
+}
+
+.derechos{
+    background: #002325;
+    color: #979797;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+
+
+@media screen and (max-width:767px){
+    .grid-footer{
+        display: grid;
+        grid-template-areas:
+            "descripcion"
+            "info"
+            "servicios"
+        ;
+        gap: 20px;
+        padding: 40px 30px;
+    }
+}
