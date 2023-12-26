@@ -35,6 +35,53 @@
     height: 100%;
 }
 
+.menu #itemServicios .dropdown-servicios{
+    position: absolute;
+    top: 100px;
+    left: 470px;
+    padding-top: 10px;
+    height: max-content;
+    background: transparent;
+    z-index: 100000;
+}
+
+.menu .dropdown-servicios::after{
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    height: 15px ;
+    width: 15px;
+    background: #fff;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+
+.menu .dropdown-invisible{
+    display: none;
+}
+
+.menu .dropdown-servicios{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0;
+}
+
+.menu .dropdown-servicios li{
+    background: #fff;
+    padding: 15px 25px;
+    border-bottom: 1px solid var(--color-primary);
+}
+
+.dropdown-servicios .dropdown-link{
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+
 .link{
     text-decoration: none;
     color: var(--color-primary);
@@ -60,6 +107,16 @@
 .menu-responsive{
     display: none;
 }
+
+@keyframes mostrarServicios {
+    from{
+        height: 0;
+    }
+    to{
+        height: max-content;
+    }
+}
+
 
 /* SMARTPHONE */
 @media screen and (max-width:767px){

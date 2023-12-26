@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MATOB Consultoría</title>
+    <title>Somos consultores impulsando negocios</title>
 
     <link rel="icon" href="./assets/matob_icono.ico">
 
@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="./css/banner.css">
     <link rel="stylesheet" href="./css/bannerNos.css">
     <link rel="stylesheet" href="./css/equipo.css">
+    <link rel="stylesheet" href="./css/objetivos.css">
+    <link rel="stylesheet" href="./css/form-contacto.css">
     <link rel="stylesheet" href="./css/footer.css">
 
     <!-- FONTS -->
@@ -32,11 +34,20 @@
         <nav class='menu'>
             <!-- <button><i class="bi bi-list"></i></button> -->
             <ul>
-                <li><a class="link font-size-6 bold-400 " href="./index.html">Inicio</a></li>
-                <li><a class="link font-size-6 bold-400 " href="./nosotros.html">Nosotros</a></li>
-                <li><a class="link font-size-6 bold-400 " href="">Servicios</a></li>
-                <li><a class="link font-size-6 bold-400 " href="">Novedades</a></li>
-                <li><a class="link font-size-6 bold-400 " href="">Contacto</a></li>
+                <li><a class="link font-size-5 bold-400 " href="./index.html">Inicio</a></li>
+                <li><a class="link font-size-5 bold-400 " href="./nosotros.html">Nosotros</a></li>
+                <li id="itemServicios">
+                    <a class="link font-size-5 bold-400 " href="">
+                        Servicios<i class="bi bi-chevron-down" style="margin-top: 5px; margin-left: 5px; font-size: 1.3rem;"></i>
+                    </a>
+                    <ul id="menuServicios" class="dropdown-invisible">
+                        <li><a class="dropdown-link font-size-5 bold-400" href="">Consultoría y gestión</a></li>
+                        <li><a class="dropdown-link font-size-5 bold-400" href="">Gestión comercial</a></li>
+                        <li><a class="dropdown-link font-size-5 bold-400" href="">Desarrollo web</a></li>
+                        <li><a class="dropdown-link font-size-5 bold-400" href="">Posicionamiento web</a></li>
+                    </ul>
+                </li>
+                <li><a class="link font-size-5 bold-400 " href="">Contacto</a></li>
             </ul>
         </nav>
         
@@ -57,14 +68,14 @@
         <div class="background-overlay">
             <div class="content-banner">
                 <h1>Somos consultores impulsando negocios</h1>
-                <h2 class="font-size-12 bold-400" style="padding: 0 15px">Trabajamos para ayudarte a transformar tu empresa, negocio u organización.</h2>
+                <h2 class="font-size-12 bold-400" style="padding: 0 15px">Transformamos desafíos en oportunidades y objetivos alcanzables.</h2>
             </div>
         </div>
     </section>
 
     <section class="equipo">
         <div class="container-equipo">
-            <h2 class="font-size-14 bold-700">CONOCE A NUESTRO EQUIPO</h2>
+            <h2 class="font-size-14 bold-700">CONOCÉ NUESTRO EQUIPO</h2>
             <div class="container-cards">
                 <div class="card">
                     <div class="card-img">
@@ -84,6 +95,47 @@
                         <p class="font-size-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum assumenda, quas voluptas minima officia dolore perspiciatis nobis quis rem rerum, cum.</p>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="objetivos">
+        <div class="container-objetivos">
+            <div class="mision">
+                <h2>NUESTRA MISIÓN</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum inventore id aut commodi quas, excepturi eligendi accusantium magnam quod non impedit porro sint reprehenderit provident eius voluptas maxime! Quaerat, aut.</p>
+            </div>
+            <div class="vision">
+                <h2>NUESTRA VISIÓN</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum inventore id aut commodi quas, excepturi eligendi accusantium magnam</p>
+            </div>
+            <div class="valores">
+                <h2>NUESTROS VALORES</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum inventore id aut commodi quas, excepturi eligendi accusantium magnam</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contacto-form">
+        <div class="container-contacto">
+            <div class="contacto-texto">
+                <h2 class="font-size-6" style="color: var(--color-primary);">ESTÁS A UN CLICK DE IMPULSAR TU NEGOCIO</h2>
+                <h2 class="font-size-16">¿Querés reunirte con nosotros? Dejá tus datos.</h2>
+            </div>
+            <div class="form">
+                <form action="">
+                    <input placeholder="*Nombre" type="text" required>
+                    <input placeholder="*Empresa" type="text" required>
+                    <input placeholder="*Email" type="email" required>
+                    <input placeholder="*Teléfono" type="text" required>
+                    <input placeholder="País" type="text">
+                    <input placeholder="Rubro" type="text">
+                    <textarea placeholder="Mensaje" cols="30" rows="10"></textarea>
+                    <div class="boton-form">
+                        <button>ENVIAR</button>
+                    </div>
+                </form>
             </div>
         </div>
     </section>

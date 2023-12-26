@@ -49,6 +49,10 @@
     transition: transform 0.3s
 }
 
+.content-banner a{
+    text-decoration: none;
+}
+
 .banner button:hover{
     transform: scale(1.1)
 }

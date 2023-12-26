@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MATOB Consultoría</title>
+    <title>Consultores para empresas, negocios y pymes</title>
 
     <link rel="icon" href="./assets/matob_icono.ico">
 
@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/banner.css">
     <link rel="stylesheet" href="./css/servicios.css">
+    <link rel="stylesheet" href="./css/form-contacto.css">
     <link rel="stylesheet" href="./css/footer.css">
 
     <!-- FONTS -->
@@ -27,17 +28,26 @@
     <header class='header'>
         <div class="logo">
             <a href="index.html">
-                <img src='./assets/logo_verde-sinfondo.png' alt="logo" />
+                <img src='./assets/logo_verde-sinfondo.png' alt="logo-matob" />
             </a>
         </div>
         <nav class='menu'>
             <!-- <button><i class="bi bi-list"></i></button> -->
             <ul>
-                <li><a class="link font-size-6 bold-400 " href="./index.html">Inicio</a></li>
-                <li><a class="link font-size-6 bold-400 " href="./nosotros.html">Nosotros</a></li>
-                <li><a class="link font-size-6 bold-400 " href="">Servicios</a></li>
-                <li><a class="link font-size-6 bold-400 " href="">Novedades</a></li>
-                <li><a class="link font-size-6 bold-400 " href="">Contacto</a></li>
+                <li><a class="link font-size-5 bold-400 " href="./index.html">Inicio</a></li>
+                <li><a class="link font-size-5 bold-400 " href="./nosotros.html">Nosotros</a></li>
+                <li id="itemServicios">
+                    <a class="link font-size-5 bold-400 " href="">
+                        Servicios<i class="bi bi-chevron-down" style="margin-top: 5px; margin-left: 5px; font-size: 1.3rem;"></i>
+                    </a>
+                    <ul id="menuServicios" class="dropdown-invisible">
+                        <li><a class="dropdown-link font-size-5 bold-400" href="">Consultoría y gestión</a></li>
+                        <li><a class="dropdown-link font-size-5 bold-400" href="">Gestión comercial</a></li>
+                        <li><a class="dropdown-link font-size-5 bold-400" href="">Desarrollo web</a></li>
+                        <li class="item-4"><a class="dropdown-link font-size-5 bold-400" href="">Posicionamiento web</a></li>
+                    </ul>
+                </li>
+                <li><a class="link font-size-5 bold-400 " href="">Contacto</a></li>
             </ul>
         </nav>
         
@@ -45,11 +55,11 @@
 
         <nav id="menuResponsive" class="menu-responsive">
             <ul>
-                <li><a class="link font-size-6 bold-400 " href="./index.html">Inicio</a></li>
-                <li><a class="link font-size-6 bold-400 " href="./nosotros.html">Nosotros</a></li>
-                <li><a class="link font-size-6 bold-400 " href="">Servicios</a></li>
-                <li><a class="link font-size-6 bold-400 " href="">Novedades</a></li>
-                <li><a class="link font-size-6 bold-400 " href="">Contacto</a></li>
+                <li><a class="link font-size-5 bold-400 " href="./index.html">Inicio</a></li>
+                <li><a class="link font-size-5 bold-400 " href="./nosotros.html">Nosotros</a></li>
+                <li><a class="link font-size-5 bold-400 " href="">Servicios</a></li>
+                <!-- <li><a class="link font-size-6 bold-400 " href="">Novedades</a></li> -->
+                <li><a class="link font-size-5 bold-400 " href="">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -58,8 +68,10 @@
         <div class="background-overlay">
             <div class="content-banner">
                 <h1>Consultores para empresas, negocios y pymes.</h1>
-                <h2 class=" font-size-15 bold-500">A la gestión la construimos junto a vos.</h2>
-                <button class=" font-size-9 bold-500">Conversemos</button>
+                <h2 class="font-size-15 bold-500">A la gestión la construimos junto a vos.</h2>
+                <a href="#formulario">
+                    <button class="font-size-9 bold-500">Conversemos</button>
+                </a>
             </div> 
         </div>
     </section>
@@ -108,6 +120,30 @@
         </div>
     </section>
 
+    <section id="formulario" class="contacto-form">
+        <div class="container-contacto">
+            <div class="contacto-texto">
+                <h2 class="font-size-6" style="color: var(--color-primary);">ESTÁS A UN CLICK DE IMPULSAR TU NEGOCIO</h2>
+                <h2 class="font-size-16">¿Querés reunirte con nosotros? Dejá tus datos.</h2>
+            </div>
+            <div class="form">
+                <form action="">
+                    <input placeholder="*Nombre" type="text" required>
+                    <input placeholder="*Empresa" type="text" required>
+                    <input placeholder="*Email" type="email" required>
+                    <input placeholder="*Teléfono" type="text" required>
+                    <input placeholder="País" type="text">
+                    <input placeholder="Rubro" type="text">
+                    <textarea placeholder="Mensaje" cols="30" rows="10"></textarea>
+                    <div class="boton-form">
+                        <button>ENVIAR</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
     <footer>
         <div class="grid-footer">
             <div class="footer-descripcion">
@@ -139,7 +175,7 @@
                 <h3>INFO</h3>
                 <ul>
                     <li><a href="./nosotros.html">Nosotros</a></li>
-                    <li><a href="">Novedades</a></li>
+                    <!-- <li><a href="">Novedades</a></li> -->
                     <li><a href="">Contacto</a></li>
                     <li><a href="">Politicas de Privacidad</a></li>
                     <li><a href="">FAQs</a></li>

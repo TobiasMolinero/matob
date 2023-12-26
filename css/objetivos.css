@@ -1,0 +1,57 @@
+.objetivos{
+    background-image: url('../assets/fondo-objetivos.jpg');
+    background-size: cover;
+    background-position:  bottom;
+}
+
+.container-objetivos{
+    display: grid;
+    grid-template-areas:
+    "mision vision"
+    "mision valores"
+    ;
+    row-gap: 35px;
+    column-gap: 60px;
+    background: #003e42ef;
+    padding: 100px 80px;
+    
+}
+
+.container-objetivos h2{
+    font-size: 1.8rem;   
+}
+
+.container-objetivos p{
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.mision, .vision, .valores{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #fff;
+}
+
+
+.mision{
+    grid-area: mision;
+}
+
+.vision{
+    grid-area: vision;
+}
+
+.valores{
+    grid-area: valores;
+}
+
+
+
+@media screen and (max-width: 768px){
+    .container-objetivos{
+        display: flex;
+        flex-direction: column;
+        padding: 100px 30px;
+    }
+}
