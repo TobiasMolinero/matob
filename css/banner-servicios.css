@@ -1,0 +1,84 @@
+.banner-servicios{
+    height: 100vh;
+}
+
+
+.content-banner-servicios{
+    display: grid;
+    grid-template-columns: 45% 55%;
+    margin: 0 70px;
+    height: 430px;
+}
+
+.content-banner-servicios h1{
+    color: #fff;
+    font-size: 4rem;
+
+}
+
+.form-banner-servicios{
+    display: flex;
+    justify-content: center;
+}
+
+.form-banner-servicios form{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-banner-servicios .group-input{
+    display: flex;
+    gap: 5px;
+}
+
+.form-banner-servicios .group-input input{
+    width: 100%;
+}
+
+.form-banner-servicios form textarea{
+    width: 100%;
+}
+
+.form-banner-servicios form input, 
+.form-banner-servicios form textarea{
+    padding: 15px 10px;
+    background: rgb(221, 221, 221);
+    border: none;
+    border-radius: 5px;
+}
+
+.form-banner-servicios .boton-form button{
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    box-shadow: none;
+}
+
+@media screen and (max-width: 768px){
+
+    .banner-servicios{
+        height: fit-content;
+    }
+
+    .content-banner-servicios{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin: 40px 30px 40px 30px;
+        height: auto;
+    }
+
+    .form-banner-servicios form{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .form-banner-servicios form .group-input{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}

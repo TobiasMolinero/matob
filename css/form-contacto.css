@@ -15,6 +15,16 @@
     gap: 15px;
 }
 
+.contacto-texto .contacto-imagen{
+    padding: 0 20px 0 0;
+}
+
+.contacto-texto .contacto-imagen img{
+    background: red;
+    width: 100%;
+    border-radius: 5px;
+}
+
 .form{
     display: flex;
 }
@@ -54,7 +64,6 @@
 }
 
 .boton-form button{
-    margin-top: 10px;
     padding: 15px 30px;
     width: 100%;
     background: var(--color-primary);
@@ -83,6 +92,10 @@
         display: flex;
         flex-direction: column;
         gap: 30px;
+    }
+
+    .contacto-texto .contacto-imagen{
+        padding: 0;
     }
 
 

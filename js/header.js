@@ -1,8 +1,8 @@
-const botonMenu = document.querySelector('#botonMenu');
-const menuResponsive = document.querySelector('#menuResponsive');
+const botonMenu = document.getElementById('botonMenu');
+const menuResponsive = document.getElementById('menuResponsive');
 
-const itemServicios = document.querySelector('#itemServicios')
-const menuServicios = document.querySelector('#menuServicios')
+const itemServicios = document.getElementById('itemServicios')
+const menuServicios = document.getElementById('menuServicios')
 
 
 var menu_abierto = false;

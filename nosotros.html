@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Buscamos ayudarte a impulsar tu negocio">
+
     <title>Somos consultores impulsando negocios</title>
 
     <link rel="icon" href="./assets/matob_icono.ico">
@@ -37,29 +39,33 @@
                 <li><a class="link font-size-5 bold-400 " href="./index.html">Inicio</a></li>
                 <li><a class="link font-size-5 bold-400 " href="./nosotros.html">Nosotros</a></li>
                 <li id="itemServicios">
-                    <a class="link font-size-5 bold-400 " href="">
+                    <a class="link font-size-5 bold-400 " href="./servicios.html">
                         Servicios<i class="bi bi-chevron-down" style="margin-top: 5px; margin-left: 5px; font-size: 1.3rem;"></i>
                     </a>
                     <ul id="menuServicios" class="dropdown-invisible">
-                        <li><a class="dropdown-link font-size-5 bold-400" href="">Consultoría y gestión</a></li>
+                        <li class="item-1"><a class="dropdown-link font-size-5 bold-400" href="">Consultoría y gestión</a></li>
                         <li><a class="dropdown-link font-size-5 bold-400" href="">Gestión comercial</a></li>
                         <li><a class="dropdown-link font-size-5 bold-400" href="">Desarrollo web</a></li>
-                        <li><a class="dropdown-link font-size-5 bold-400" href="">Posicionamiento web</a></li>
+                        <li class="item-4"><a class="dropdown-link font-size-5 bold-400" href="">Posicionamiento web</a></li>
                     </ul>
                 </li>
-                <li><a class="link font-size-5 bold-400 " href="">Contacto</a></li>
+                <li><a class="link font-size-5 bold-400 " href="./contacto.html">Contacto</a></li>
             </ul>
         </nav>
         
+        <div class="nro-telefono">
+            <p class="font-size-5 bold-500"><i class="bi bi-telephone"></i>+ 54 9 3816698487 / 3815673581</p>
+        </div>
+        
+
         <button id="botonMenu" class="boton-menu"><i class="bi bi-list"></i></button>
 
         <nav id="menuResponsive" class="menu-responsive">
             <ul>
                 <li><a class="link font-size-6 bold-400 " href="./index.html">Inicio</a></li>
                 <li><a class="link font-size-6 bold-400 " href="./nosotros.html">Nosotros</a></li>
-                <li><a class="link font-size-6 bold-400 " href="">Servicios</a></li>
-                <li><a class="link font-size-6 bold-400 " href="">Novedades</a></li>
-                <li><a class="link font-size-6 bold-400 " href="">Contacto</a></li>
+                <li><a class="link font-size-6 bold-400 " href="./servicios.html">Servicios</a></li>
+                <li><a class="link font-size-6 bold-400 " href="./contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -79,20 +85,29 @@
             <div class="container-cards">
                 <div class="card">
                     <div class="card-img">
-                        <img src="./assets/majo.jpeg" alt="miembro_equipo">
+                        <img src="./assets/majo.jpeg" alt="miembro_equipo_majo">
                     </div>
                     <div class="card-text">
                         <h4 class="font-size-6">Maria José Mazzocato</h4>
-                        <p class="font-size-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum assumenda, quas voluptas minima officia dolore perspiciatis nobis quis rem rerum, cum.</p>
+                        <ul>
+                            <li class="font-size-4">Lic. en Relaciones Internacionales;</li>
+                            <li class="font-size-4">Proyect Manager;</li>
+                            <li class="font-size-4">Coordinadora de gestión;</li>
+                            <li class="font-size-4">Analista en Comercio Internacional;</li>
+                            <li class="font-size-4">Docente Universitario.</li>
+                        </ul>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-img">
-                        <img class="img-tobias" src="./assets/tobias.png" alt="miembro_equipo">
+                        <img class="img-tobias" src="./assets/tobias.png" alt="miembro_equipo_tobias">
                     </div>
                     <div class="card-text">
                         <h4 class="font-size-6">Tobias Molinero</h4>
-                        <p class="font-size-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum assumenda, quas voluptas minima officia dolore perspiciatis nobis quis rem rerum, cum.</p>
+                        <ul>
+                            <li class="font-size-4">Tecnico Universitario en Programación;</li>
+                            <li class="font-size-4">Desarrollador Full-Stack Jr.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -122,18 +137,22 @@
             <div class="contacto-texto">
                 <h2 class="font-size-6" style="color: var(--color-primary);">ESTÁS A UN CLICK DE IMPULSAR TU NEGOCIO</h2>
                 <h2 class="font-size-16">¿Querés reunirte con nosotros? Dejá tus datos.</h2>
+                <div class="contacto-imagen">
+                    <img src="./assets/banner_nos_2.jpg" alt="reunion-consulta">
+                </div>
             </div>
             <div class="form">
-                <form action="">
-                    <input placeholder="*Nombre" type="text" required>
-                    <input placeholder="*Empresa" type="text" required>
-                    <input placeholder="*Email" type="email" required>
-                    <input placeholder="*Teléfono" type="text" required>
-                    <input placeholder="País" type="text">
-                    <input placeholder="Rubro" type="text">
-                    <textarea placeholder="Mensaje" cols="30" rows="10"></textarea>
+                <form>
+                    <input name="nombre" placeholder="*Nombre" type="text" required>
+                    <input name="empresa" placeholder="*Empresa" type="text" required>
+                    <input name="email" placeholder="*Email" type="email" required>
+                    <input name="telefono" placeholder="*Teléfono" type="text" required>
+                    <input name="pais" placeholder="País" type="text">
+                    <input name="rubro" placeholder="Rubro" type="text">
+                    <textarea name="mensaje" placeholder="Mensaje" cols="30" rows="10"></textarea>
+                    <p class="font-size-4" style="width: 100%; text-align: start;">* Campos obligatorios</p>
                     <div class="boton-form">
-                        <button>ENVIAR</button>
+                        <button type="submit">ENVIAR MENSAJE</button>
                     </div>
                 </form>
             </div>
@@ -144,12 +163,12 @@
     <footer>
         <div class="grid-footer">
             <div class="footer-descripcion">
-                <img src="./assets/logo-footer.png" alt="logo">
+                <img src="./assets/logo-footer.png" alt="logo footer consultoria MATOB">
                 <p>Buscamos brindar soluciones completas para problemas de gestión de negocios.</p>
                 <ul class="footer-descripcion_telefono_direccion">
                     <li>
                         <i class="bi bi-telephone-fill"></i>
-                        +54 381 5 999999
+                        + 54 9 3816698487 / 3815673581
                     </li>
                     <li>
                         <i class="bi bi-geo-alt-fill"></i>
@@ -173,7 +192,7 @@
                 <ul>
                     <li><a href="./nosotros.html">Nosotros</a></li>
                     <li><a href="">Novedades</a></li>
-                    <li><a href="">Contacto</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
                     <li><a href="">Politicas de Privacidad</a></li>
                     <li><a href="">FAQs</a></li>
                 </ul>
