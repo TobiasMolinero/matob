@@ -9,6 +9,9 @@
 
     <link rel="stylesheet" href="./css/root.css">
     <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/banner.css">
+    <link rel="stylesheet" href="./css/banner-contacto.css">
+    <link rel="stylesheet" href="./css/form-contacto.css">
     <link rel="stylesheet" href="./css/footer.css">
 
         <!-- FONTS -->
@@ -27,12 +30,11 @@
             </a>
         </div>
         <nav class='menu'>
-            <!-- <button><i class="bi bi-list"></i></button> -->
             <ul>
-                <li><a class="link font-size-5 bold-400 " href="./index.html">Inicio</a></li>
-                <li><a class="link font-size-5 bold-400 " href="./nosotros.html">Nosotros</a></li>
+                <li><a id="inicio" class="link font-size-5 bold-400 " href="./index.html">Inicio</a></li>
+                <li><a id="nosotros" class="link font-size-5 bold-400 " href="./nosotros.html">Nosotros</a></li>
                 <li id="itemServicios">
-                    <a class="link font-size-5 bold-400 " href="./servicios.html">
+                    <a id="servicios" class="link font-size-5 bold-400 " href="./servicios.html">
                         Servicios<i class="bi bi-chevron-down" style="margin-top: 5px; margin-left: 5px; font-size: 1.3rem;"></i>
                     </a>
                     <ul id="menuServicios" class="dropdown-invisible">
@@ -42,7 +44,7 @@
                         <li class="item-4"><a class="dropdown-link font-size-5 bold-400" href="">Posicionamiento web</a></li>
                     </ul>
                 </li>
-                <li><a class="link font-size-5 bold-400 " href="./contacto.html">Contacto</a></li>
+                <li><a id="contacto" class="link font-size-5 bold-400 " href="./contacto.html">Contacto</a></li>
             </ul>
         </nav>
 
@@ -63,7 +65,37 @@
         </nav>
     </header>
 
-    <h1>CONTACTO</h1>
+    <section class="banner banner-contacto">
+        <div class="background-overlay">
+            <div class="content-banner">
+                <h1>Contacto</h1>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="contacto-form">
+        <div class="container-contacto">
+            <div class="contacto-texto">
+                <h2 class="font-size-6" style="color: var(--color-primary);">CONTACTO</h2>
+                <h2 class="font-size-16">Quiero recibir más info de los servicios</h2>
+                <div class="contacto-imagen">
+                    <img src="./assets/banner_nos_2.jpg" alt="reunion-consulta">
+                </div>
+            </div>
+            <div class="form">
+                <form>
+                    <input name="nombre" placeholder="Nombre" type="text" required>
+                    <input name="email" placeholder="Email" type="email" required>
+                    <input name="telefono" placeholder="Teléfono" type="text" required>
+                    <textarea name="mensaje" placeholder="Mensaje" cols="30" rows="10"></textarea>
+                    <div class="boton-form" style="margin-top: 10px;">
+                        <button type="submit">ENVIAR MENSAJE</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
 
     <footer>
         <div class="grid-footer">
@@ -118,5 +150,6 @@
     </footer>
 
     <script src="./js/header.js"></script>
+    <script src="./js/marcarItem.js"></script>
 </body>
 </html>

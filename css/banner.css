@@ -45,6 +45,7 @@
     background: var(--color-secondary);
     color: var(--color-primary);
     border: none;
+    border-radius: 5px;
     cursor: pointer;
     transition: transform 0.3s
 }

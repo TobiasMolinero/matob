@@ -34,10 +34,10 @@
         <nav class='menu'>
             <!-- <button><i class="bi bi-list"></i></button> -->
             <ul>
-                <li><a class="link font-size-5 bold-400 " href="./index.html">Inicio</a></li>
-                <li><a class="link font-size-5 bold-400 " href="./nosotros.html">Nosotros</a></li>
+                <li><a id="inicio" class="link font-size-5 bold-400 " href="./index.html">Inicio</a></li>
+                <li><a id="nosotros" class="link font-size-5 bold-400 " href="./nosotros.html">Nosotros</a></li>
                 <li id="itemServicios">
-                    <a class="link font-size-5 bold-400 " href="./servicios.html">
+                    <a id="servicios" class="link font-size-5 bold-400 " href="./servicios.html">
                         Servicios<i class="bi bi-chevron-down" style="margin-top: 5px; margin-left: 5px; font-size: 1.3rem;"></i>
                     </a>
                     <ul id="menuServicios" class="dropdown-invisible">
@@ -47,7 +47,7 @@
                         <li class="item-4"><a class="dropdown-link font-size-5 bold-400" href="">Posicionamiento web</a></li>
                     </ul>
                 </li>
-                <li><a class="link font-size-5 bold-400 " href="./contacto.html">Contacto</a></li>
+                <li><a id="contacto" class="link font-size-5 bold-400 " href="./contacto.html">Contacto</a></li>
             </ul>
         </nav>
 
@@ -74,21 +74,17 @@
                 <div class="form-banner-servicios">
                     <form>
                         <div class="group-input">
-                            <input name="nombre" placeholder="*Nombre" type="text" required>
-                            <input name="empresa" placeholder="*Empresa" type="text" required>
+                            <input name="nombre" placeholder="Nombre" type="text" required>
                         </div>
                         <div class="group-input">
-                            <input name="email" placeholder="*Email" type="email" required>
-                            <input name="telefono" placeholder="*Teléfono" type="text" required>
+                            <input name="email" placeholder="Email" type="email" required>
                         </div>
                         <div class="group-input">
-                            <input name="pais" placeholder="País" type="text">
-                            <input name="rubro" placeholder="Rubro" type="text">
+                            <input name="telefono" placeholder="Teléfono" type="text" required>
                         </div>
                         <textarea name="mensaje" placeholder="Mensaje" cols="30" rows="10"></textarea>
-                        <p class="font-size-4" style="width: 100%; text-align: start; color: #fff;">* Campos obligatorios</p>
                         <div class="boton-form">
-                            <button type="submit">ENVIAR MENSAJE</button>
+                            <button type="submit" style="margin-top: 15px;">ENVIAR MENSAJE</button>
                         </div>
                     </form>
                 </div>
@@ -191,6 +187,7 @@
     </footer>
 
     <script src="./js/header.js"></script>
+    <script src="./js/marcarItem.js"></script>
     <script src="./js/bannerNos.js"></script>
 </body>
 </html>

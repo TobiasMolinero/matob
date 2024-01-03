@@ -118,12 +118,18 @@
     background: #f3f3f3;
 }
 
+
 .boton-menu{
     display: none;
 }
 
 .menu-responsive{
     display: none;
+}
+
+.link-selected{
+    background: #fafafa;
+    border-top: 2px solid var(--color-primary);
 }
 
 @keyframes mostrarServicios {

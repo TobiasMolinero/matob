@@ -20,19 +20,21 @@
 }
 
 .contacto-texto .contacto-imagen img{
-    background: red;
     width: 100%;
     border-radius: 5px;
 }
 
 .form{
     display: flex;
+    justify-content: center;
+    align-items: end;
 }
 
 .form form{
+    width: 80%;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+
     gap: 5px;
     padding: 0 10px;
 }
@@ -51,7 +53,7 @@
 }
 
 .form form input{
-    width: 350px;
+    width: 100%;
 }
 
 .form form textarea{
